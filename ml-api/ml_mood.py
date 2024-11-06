@@ -27,9 +27,7 @@ def is_keyword_negated(text, keyword):
                     return True
     return False
 
-@app.route('/')
-def home():
-    return "Welcome to the Mood Analysis API! Use the /analyze endpoint to analyze moods."
+
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
